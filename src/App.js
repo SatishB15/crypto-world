@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 import { Layout, Typography, Space } from 'antd';
 
-import { Exchanges, Homepage, News, Cryptocurrencies, CryptoDetails, Navbar } from './components';
+import { Exchanges, Homepage, News, Cryptocurrencies, CryptoDetails, Navbar, Aboutus, Contactus } from './components';
 import './App.css';
 
 const App = () => (
@@ -28,6 +28,12 @@ const App = () => (
             </Route>
             <Route exact path="/news">
               <News />
+            </Route>
+            <Route exact path="/aboutus">
+              <Aboutus />
+            </Route>
+            <Route exact path="/contactus">
+              <Contactus />
             </Route>
           </Switch>
         </div>
